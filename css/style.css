@@ -1,0 +1,132 @@
+body {
+    font-family: 'Oxanium', cursive;
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+}
+
+body::before {
+    content: "";
+    background-image: url(../img/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-avatares {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.avatares {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.img-avatar:hover{
+    cursor: pointer;
+    
+}
+
+.selecao-de-personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+}
+
+.personagens-goku, .personagens-vegetta, .personagens-majinboo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;   
+}
+
+.personagens-goku, .personagens-vegetta, .personagens-majinboo,
+.personagem-selecionado-goku, .personagem-selecionado-vegetta, .personagem-selecionado-majinboo {
+    display: none;
+}
+
+.selecao-de-personagens .tituloMaior {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF8C00;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selecao-de-personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF8C00;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100px;
+    height: 160px;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.personagem-selecionado-goku, .personagem-selecionado-vegetta, .personagem-selecionado-majinboo {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado-goku .personagem-grande, .personagem-selecionado-vegetta .personagem-grande, .personagem-selecionado-majinboo .personagem-grande {
+    width: 300px;
+    height: 430px;
+}
+
+.personagem-selecionado-goku .nome-personagem, .personagem-selecionado-vegetta .nome-personagem, .personagem-selecionado-majinboo .nome-personagem {
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF8C00;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.personagem-selecionado-goku .descricao-personagem, .personagem-selecionado-vegetta .descricao-personagem, .personagem-selecionado-majinboo .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
