@@ -33,7 +33,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## 🚀 Como Acessar
 Para visualizar o projeto diretamente, acesse o seguinte link no seu navegador:
 
-🔗 Acesse a Seleção de Personagens DBZ
+🔗 [Acesse a Seleção de Personagens DBZ](https://gisele-nuness.github.io/ATIVIDADE-DBZ/)
 
 ## 📘 Objetivo do Projeto
 Este projeto teve como foco:
